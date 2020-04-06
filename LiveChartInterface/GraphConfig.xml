@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Graphs>
+    <Graph>
+      <Name>Power</Name>
+      <XAxisTitle>Time (Seconds)</XAxisTitle>
+			<YAxes>
+				<YAxis>
+					<Title>Active Power (W)</Title>
+					<Color>Red</Color>
+				</YAxis>
+				<YAxis>
+					<Title>Apparent Power (VA)</Title>
+					<Color>Blue</Color>
+				</YAxis>
+			</YAxes>
+			<Series>
+				<Name>Active Power</Name>
+				<RawDataPointKey>Active Power Data</RawDataPointKey>
+				<Color>Red</Color>
+				<YAxis>0</YAxis>
+			</Series>
+			<Series>
+				<Name>Apparent Power</Name>
+				<RawDataPointKey>Apparent Power Data</RawDataPointKey>
+				<Color>Blue</Color>
+				<YAxis>1</YAxis>
+			</Series>
+		</Graph>
+		<Graph>
+			<Name>Temperatures</Name>
+			<XAxisTitle>Time (Seconds)</XAxisTitle>
+			<YAxes>
+				<YAxis>
+					<Title>Temperature (F)</Title>
+					<Color>White</Color>
+				</YAxis>
+        <YAxis>
+          <Title>Flow (LPM)</Title>
+          <Color>Red</Color>
+        </YAxis>
+			</YAxes>
+			<Series>
+				<Name>Factory Ambient</Name>
+				<RawDataPointKey>Factory Ambient Data</RawDataPointKey>
+				<Color>Green</Color>
+				<YAxis>0</YAxis>
+			</Series>
+			<Series>
+				<Name>Indoor Coil</Name>
+				<RawDataPointKey>Indoor Coil Data</RawDataPointKey>
+				<Color>Orange</Color>
+				<YAxis>0</YAxis>
+			</Series>
+			<Series>
+				<Name>Outdoor Coil</Name>
+				<RawDataPointKey>Outdoor Coil Data</RawDataPointKey>
+				<Color>Yellow</Color>
+				<YAxis>0</YAxis>
+			</Series>
+			<Series>
+				<Name>Outlet Air</Name>
+				<RawDataPointKey>Outlet Air Data</RawDataPointKey>
+				<Color>Blue</Color>
+				<YAxis>1</YAxis>
+			</Series>
+		</Graph>
+	</Graphs>
+	<RawDataPoints>
+		<RawDataPoint>
+			<Key>Outlet Air Data</Key>
+			<IntervalMs>500</IntervalMs>
+      <SampleData>
+        <Data>1.0</Data>
+        <Data>0.9</Data>
+        <Data>1.1</Data>
+        <Data>1.2</Data>
+        <Data>1.7</Data>
+        <Data>1.9</Data>
+        <Data>1.8</Data>
+      </SampleData>
+		</RawDataPoint>
+		<RawDataPoint>
+			<Key>Outdoor Coil Data</Key>
+			<IntervalMs>500</IntervalMs>
+      <SampleData>
+        <Data>78</Data>
+        <Data>77.2</Data>
+        <Data>76.0</Data>
+        <Data>75</Data>
+        <Data>74</Data>
+        <Data>77</Data>
+        <Data>78</Data>
+      </SampleData>
+		</RawDataPoint>
+		<RawDataPoint>
+			<Key>Indoor Coil Data</Key>
+			<IntervalMs>500</IntervalMs>
+      <SampleData>
+        <Data>84</Data>
+        <Data>86</Data>
+        <Data>85</Data>
+        <Data>80</Data>
+        <Data>81</Data>
+        <Data>84</Data>
+        <Data>82</Data>
+      </SampleData>
+		</RawDataPoint>
+		<RawDataPoint>
+			<Key>Factory Ambient Data</Key>
+			<IntervalMs>500</IntervalMs>
+      <SampleData>
+        <Data>72</Data>
+        <Data>72.3</Data>
+        <Data>72.1</Data>
+        <Data>72.3</Data>
+        <Data>72.1</Data>
+        <Data>72.2</Data>
+        <Data>71.9</Data>
+      </SampleData>
+		</RawDataPoint>
+		<RawDataPoint>
+			<Key>Apparent Power Data</Key>
+			<IntervalMs>500</IntervalMs>
+      <SampleData>
+        <Data>855.2</Data>
+        <Data>865.2</Data>
+        <Data>750.1</Data>
+        <Data>724.0</Data>
+        <Data>700.0</Data>
+        <Data>764.2</Data>
+        <Data>824.0</Data>
+      </SampleData>
+		</RawDataPoint>
+		<RawDataPoint>
+			<Key>Active Power Data</Key>
+			<IntervalMs>500</IntervalMs>
+      <SampleData>
+        <Data>825.2</Data>
+        <Data>815.2</Data>
+        <Data>740.1</Data>
+        <Data>734.0</Data>
+        <Data>750.0</Data>
+        <Data>724.2</Data>
+        <Data>854.0</Data>
+      </SampleData>
+		</RawDataPoint>
+	</RawDataPoints>
+</Configuration>
